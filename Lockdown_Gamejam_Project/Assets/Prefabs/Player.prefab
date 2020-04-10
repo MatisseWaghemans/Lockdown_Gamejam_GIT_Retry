@@ -106,7 +106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2696298615302025641}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -133,9 +133,10 @@ MonoBehaviour:
   _gun: {fileID: 5663662817298223473}
   _bulletPrefab: {fileID: 2113792727812715484, guid: c21a69c31ed0b384d9a26ee8c44dc888,
     type: 3}
-  _force: 12.4
+  _force: 15
   _bulletSpawn: {fileID: 1906701002234659146}
   character: {fileID: 2696298615556219268}
+  Reloadtime: 0.3
 --- !u!50 &2696298615302025646
 Rigidbody2D:
   serializedVersion: 4

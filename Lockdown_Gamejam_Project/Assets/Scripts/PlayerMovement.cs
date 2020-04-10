@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform _bulletSpawn;
     [SerializeField] private SpriteRenderer character;
 
+    private bool _hasShot = true;
+
     Vector2 movement;
     // Start is called before the first frame update
     void Start()
@@ -63,9 +65,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void ShootGun()
     {
-        GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
-        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
-
+        if (_hasShot)
+        {
+            _hasShot = false;
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+            StartCoroutine(WaitForSeconds(1));
+        }
     }
     private void MoveGun()
     {
@@ -84,6 +90,13 @@ public class PlayerMovement : MonoBehaviour
         rigidbody.MovePosition(rigidbody.position + movement * moveSpeed * Time.deltaTime);
     }
 
+
+    IEnumerator WaitForSeconds(int Seconds)
+    {
+        yield return new WaitForSeconds(Seconds);
+        _hasShot = true;
+        yield return null;
+    }
     IEnumerator Squash()
     {
         float time = 0;

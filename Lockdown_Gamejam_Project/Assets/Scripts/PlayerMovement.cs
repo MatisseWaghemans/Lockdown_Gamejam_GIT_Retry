@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float Reloadtime = 1f;
 
+    public List<GameObject> _followers = new List<GameObject>();
+
     Vector2 movement;
     // Start is called before the first frame update
     void Start()
@@ -93,10 +95,12 @@ public class PlayerMovement : MonoBehaviour
         if(playerPos.x>mouse.x)
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
+            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,-0.2f);
         }
         else
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
+            _gun.transform.localPosition = new Vector3(0.38f,0.07f,-0.2f);
         }
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -158,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
         while (sin >= 0)
         {
              sin = _Squash * Mathf.Sin(time * Frequency);
-            transform.localScale = Vector3.one + new Vector3(-sin, sin, -sin);
+             character.transform.localScale =Vector3.Scale(Vector3.one + new Vector3(-sin, sin, -sin),Vector3.one*2);
             time += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }

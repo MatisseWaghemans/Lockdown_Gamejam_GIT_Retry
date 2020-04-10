@@ -38,22 +38,35 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
             ShootGun();
+        if(_hasShot)
+        {
         MoveGun();
+        }
     }
 
     private void Move()
     {
+        Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            character.flipX = true;
+        }
+        else
+        {
+            character.flipX = false;
+        }
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         if(Input.GetAxisRaw("Horizontal") < 0 && !_hasTurned)
         {
-            character.flipX = true;
+
             _hasTurned = true;
         }
         else if (Input.GetAxisRaw("Horizontal") > 0 && _hasTurned)
         {
-            character.flipX = false;
+
             _hasTurned = false;
         }
 
@@ -75,6 +88,16 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MoveGun()
     {
+        Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
+        }
+        else
+        {
+            _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
+        }
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 lookAt = mouseScreenPosition;
@@ -95,10 +118,10 @@ public class PlayerMovement : MonoBehaviour
     {
 
         Shoot();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.07f);
 
         Shoot();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.07f);
 
         Shoot();
 
@@ -109,8 +132,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
-        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.Euler(0,0,_gun.transform.rotation.eulerAngles.x));
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        }
+        else
+        {
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.Euler(0,0,-_gun.transform.rotation.eulerAngles.x));
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        }
+        
     }
 
     IEnumerator Squash()

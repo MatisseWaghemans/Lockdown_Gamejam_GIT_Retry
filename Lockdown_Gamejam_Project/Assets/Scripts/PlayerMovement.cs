@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _force;
     [SerializeField] private Transform _bulletSpawn;
     [SerializeField] private SpriteRenderer character;
-    private Transform _spawnTransform;
 
     private bool _hasShot = true;
 
@@ -39,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
             ShootGun();
-        if(_hasShot)
         MoveGun();
     }
 
@@ -71,8 +69,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_hasShot)
         {
-            _spawnTransform = _bulletSpawn;
-            _spawnTransform.rotation = _gun.transform.rotation;
             _hasShot = false;
             StartCoroutine(ShootCouroutine(Reloadtime));
         }
@@ -99,10 +95,10 @@ public class PlayerMovement : MonoBehaviour
     {
 
         Shoot();
-        yield return new WaitForSeconds(0.07f);
+        yield return new WaitForSeconds(0.1f);
 
         Shoot();
-        yield return new WaitForSeconds(0.07f);
+        yield return new WaitForSeconds(0.1f);
 
         Shoot();
 
@@ -113,17 +109,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Shoot()
     {
-        Vector2 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-        if(mouse.x<0.5f)
-        {
-            GameObject _bullet =Instantiate(_bulletPrefab,_spawnTransform.position,Quaternion.Euler(0,0,_spawnTransform.eulerAngles.x));
-                    _bullet.GetComponent<Rigidbody2D>().AddForce(_spawnTransform.forward*_force,ForceMode2D.Impulse);
-        }
-        else
-        {
-            GameObject _bullet =Instantiate(_bulletPrefab,_spawnTransform.position,Quaternion.Euler(0,0,-_spawnTransform.eulerAngles.x));
-                    _bullet.GetComponent<Rigidbody2D>().AddForce(_spawnTransform.forward*_force,ForceMode2D.Impulse);
-        }
+        GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
+        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
     }
 
     IEnumerator Squash()

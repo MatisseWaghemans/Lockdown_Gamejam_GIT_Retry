@@ -26,19 +26,8 @@ public class CharacterController : MonoBehaviour
     }
     private void ShootGun()
     {
-        Vector2 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-        if(mouse.x<0.5f)
-        {
-            GameObject _bullet =Instantiate(_bulletPrefab,_bulletSpawn.position,Quaternion.Euler(0,0,_gun.transform.eulerAngles.x));
-                    _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward*_force,ForceMode2D.Impulse);
-        }
-        else
-        {
-            GameObject _bullet =Instantiate(_bulletPrefab,_bulletSpawn.position,Quaternion.Euler(0,0,-_gun.transform.eulerAngles.x));
-                    _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward*_force,ForceMode2D.Impulse);
-        }
-
-
+        GameObject _bullet =Instantiate(_bulletPrefab,_bulletSpawn.position,transform.rotation);
+        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward*_force,ForceMode2D.Impulse);
 
     }
     private void MovePerson()

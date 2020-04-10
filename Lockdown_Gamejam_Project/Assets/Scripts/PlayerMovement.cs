@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool _hasShot = true;
 
+    public float Reloadtime = 1f;
+
     Vector2 movement;
     // Start is called before the first frame update
     void Start()
@@ -68,9 +70,7 @@ public class PlayerMovement : MonoBehaviour
         if (_hasShot)
         {
             _hasShot = false;
-            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
-            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
-            StartCoroutine(WaitForSeconds(1));
+            StartCoroutine(ShootCouroutine(Reloadtime));
         }
     }
     private void MoveGun()
@@ -91,12 +91,28 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    IEnumerator WaitForSeconds(int Seconds)
+    IEnumerator ShootCouroutine(float Seconds)
     {
+
+        Shoot();
+        yield return new WaitForSeconds(0.1f);
+
+        Shoot();
+        yield return new WaitForSeconds(0.1f);
+
+        Shoot();
+
         yield return new WaitForSeconds(Seconds);
         _hasShot = true;
         yield return null;
     }
+
+    private void Shoot()
+    {
+        GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
+        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+    }
+
     IEnumerator Squash()
     {
         float time = 0;

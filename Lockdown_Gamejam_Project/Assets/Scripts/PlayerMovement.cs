@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,16 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rigidbody;
     private bool _hasSquashed = true;
+    private bool _hasTurned = false;
     [SerializeField] private float _Squash = 0.2f;
     [SerializeField] private float Frequency = 2f;
+
+
+    [SerializeField] private GameObject _gun;
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private float _force;
+    [SerializeField] private Transform _bulletSpawn;
+    [SerializeField] private SpriteRenderer character;
 
     Vector2 movement;
     // Start is called before the first frame update
@@ -21,16 +30,54 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        Move();
+
+        if (Input.GetMouseButtonDown(0))
+            ShootGun();
+        MoveGun();
+    }
+
+    private void Move()
+    {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        if(Input.GetAxisRaw("Horizontal") < 0 && !_hasTurned)
+        {
+            character.flipX = true;
+            _hasTurned = true;
+        }
+        else if (Input.GetAxisRaw("Horizontal") > 0 && _hasTurned)
+        {
+            character.flipX = false;
+            _hasTurned = false;
+        }
 
         movement = movement.normalized;
 
-        if(movement.magnitude > 0.1f & _hasSquashed)
+        if (movement.magnitude > 0.1f & _hasSquashed)
         {
             StartCoroutine(Squash());
         }
+    }
+
+    private void ShootGun()
+    {
+        GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
+        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+
+    }
+    private void MoveGun()
+    {
+        Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector3 lookAt = mouseScreenPosition;
+
+        float AngleRad = Mathf.Atan2(lookAt.y - _gun.transform.position.y, lookAt.x - _gun.transform.position.x);
+
+        float AngleDeg = (180 / Mathf.PI) * AngleRad;
+
+        _gun.transform.rotation = Quaternion.Euler(-AngleDeg, 90, 0);
     }
     private void FixedUpdate()
     {

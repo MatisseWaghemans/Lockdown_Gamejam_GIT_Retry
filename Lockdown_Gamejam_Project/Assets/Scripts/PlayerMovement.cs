@@ -45,17 +45,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        Vector2 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector2 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            character.flipX = true;
+        }
+        else
+        {
+            character.flipX =false;
+        }
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         if(Input.GetAxisRaw("Horizontal") < 0 && !_hasTurned)
         {
-            character.flipX = true;
             _hasTurned = true;
         }
         else if (Input.GetAxisRaw("Horizontal") > 0 && _hasTurned)
         {
-            character.flipX = false;
             _hasTurned = false;
         }
 
@@ -79,6 +87,18 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MoveGun()
     {
+        Vector2 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector2 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            _gun.transform.localPosition = new Vector3( 0.84f,-0.7f, _gun.transform.localPosition.z);
+            _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
+        }
+        else
+        {
+            _gun.transform.localPosition = new Vector3( -0.6f,-1.5f, _gun.transform.localPosition.z);
+            _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
+        }
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 lookAt = mouseScreenPosition;

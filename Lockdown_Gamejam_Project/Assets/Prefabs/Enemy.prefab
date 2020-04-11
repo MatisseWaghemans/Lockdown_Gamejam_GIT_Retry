@@ -90,8 +90,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1567688146341985702}
-  - component: {fileID: 1567688146341985701}
   - component: {fileID: 1567688146341985703}
+  - component: {fileID: 8880379011438872918}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -115,24 +115,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1567688146341985701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567688146341985699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed4e4e1d47515754c9b97740f4c7e29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gun: {fileID: 9093891404590980475}
-  _bulletPrefab: {fileID: 908532450706810889, guid: 46806778dbbdf504896a676baa80ec55,
-    type: 3}
-  _force: 20
-  _bulletSpawn: {fileID: 3089283714399440192}
-  character: {fileID: 1567688146062323086}
 --- !u!61 &1567688146341985703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,6 +141,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3973887, y: 1.8742628}
   m_EdgeRadius: 0
+--- !u!114 &8880379011438872918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567688146341985699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a0e822ff65dde4ebb3bd1d58b1edb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gun: {fileID: 9093891404590980475}
+  _bulletPrefab: {fileID: 908532450706810889, guid: 46806778dbbdf504896a676baa80ec55,
+    type: 3}
+  _force: 20
+  _bulletSpawn: {fileID: 3089283714399440192}
+  character: {fileID: 1567688146062323086}
 --- !u!1 &4415734834236094426
 GameObject:
   m_ObjectHideFlags: 0

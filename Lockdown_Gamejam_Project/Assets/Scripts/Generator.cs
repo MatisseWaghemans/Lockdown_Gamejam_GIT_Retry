@@ -20,7 +20,8 @@ public class Generator : MonoBehaviour
     [SerializeField]
     public int NumberOfRooms = 5;
 
-    private float _offset = 5f;
+    private float _offsetHorizontal = 28f;
+    private float _offsetVertical = 16f;
 
     private Vector2 _position = Vector2.zero;
     private Vector2 _lastPosition = Vector2.zero;
@@ -44,19 +45,19 @@ public class Generator : MonoBehaviour
         Vector2 previousPositionCalculation;
         Vector2 nextPositionCalculation;
 
-        if (nextPosition == Vector2.left * _offset)
+        if (nextPosition == Vector2.left * _offsetHorizontal)
         {
             _room = Instantiate(SpawnRooms[3], position, Quaternion.identity);
         }
-        else if (nextPosition == Vector2.right * _offset)
+        else if (nextPosition == Vector2.right * _offsetHorizontal)
         {
             _room = Instantiate(SpawnRooms[1], position, Quaternion.identity);
         }
-        else if (nextPosition == Vector2.up * _offset)
+        else if (nextPosition == Vector2.up * _offsetVertical)
         {
             _room = Instantiate(SpawnRooms[0], position, Quaternion.identity);
         }
-        else if (nextPosition == Vector2.down * _offset)
+        else if (nextPosition == Vector2.down * _offsetVertical)
         {
             _room = Instantiate(SpawnRooms[2], position, Quaternion.identity);
         }
@@ -73,67 +74,67 @@ public class Generator : MonoBehaviour
             nextPositionCalculation = nextPosition - position;
 
             //links rechts
-            if (previousPositionCalculation == Vector2.left * _offset && nextPositionCalculation == Vector2.right * _offset)
+            if (previousPositionCalculation == Vector2.left * _offsetHorizontal && nextPositionCalculation == Vector2.right * _offsetHorizontal)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, HorizontalRooms.Length);
                 _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
-            else if (previousPositionCalculation == Vector2.right * _offset && nextPositionCalculation == Vector2.left * _offset)
+            else if (previousPositionCalculation == Vector2.right * _offsetHorizontal && nextPositionCalculation == Vector2.left * _offsetHorizontal)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, HorizontalRooms.Length);
                 _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //boven onder
-            else if (previousPositionCalculation == Vector2.up * _offset && nextPositionCalculation == Vector2.down * _offset)
+            else if (previousPositionCalculation == Vector2.up * _offsetVertical && nextPositionCalculation == Vector2.down * _offsetVertical)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, VerticalRooms.Length);
                 _room = Instantiate(VerticalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
-            else if (previousPositionCalculation == Vector2.down * _offset && nextPositionCalculation == Vector2.up * _offset)
+            else if (previousPositionCalculation == Vector2.down * _offsetVertical && nextPositionCalculation == Vector2.up * _offsetVertical)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, VerticalRooms.Length);
                 _room = Instantiate(VerticalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //links boven
-            else if (previousPositionCalculation == Vector2.left * _offset && nextPositionCalculation == Vector2.up * _offset)
+            else if (previousPositionCalculation == Vector2.left * _offsetHorizontal && nextPositionCalculation == Vector2.up * _offsetVertical)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftTopRooms.Length);
                 _room = Instantiate(LWayLeftTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
-            else if (previousPositionCalculation == Vector2.up * _offset && nextPositionCalculation == Vector2.left * _offset)
+            else if (previousPositionCalculation == Vector2.up * _offsetVertical && nextPositionCalculation == Vector2.left * _offsetHorizontal)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftTopRooms.Length);
                 _room = Instantiate(LWayLeftTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //links onder
-            else if (previousPositionCalculation == Vector2.left * _offset && nextPositionCalculation == Vector2.down * _offset)
+            else if (previousPositionCalculation == Vector2.left * _offsetHorizontal && nextPositionCalculation == Vector2.down * _offsetVertical)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftBottomRooms.Length);
                 _room = Instantiate(LWayLeftBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
-            else if (previousPositionCalculation == Vector2.down * _offset && nextPositionCalculation == Vector2.left * _offset)
+            else if (previousPositionCalculation == Vector2.down * _offsetVertical && nextPositionCalculation == Vector2.left * _offsetHorizontal)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftBottomRooms.Length);
                 _room = Instantiate(LWayLeftBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //Rechts boven
-            else if (previousPositionCalculation == Vector2.right * _offset && nextPositionCalculation == Vector2.up * _offset)
+            else if (previousPositionCalculation == Vector2.right * _offsetHorizontal && nextPositionCalculation == Vector2.up * _offsetVertical)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightTopRooms.Length);
                 _room = Instantiate(LWayRightTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
-            else if (previousPositionCalculation == Vector2.up * _offset && nextPositionCalculation == Vector2.right * _offset)
+            else if (previousPositionCalculation == Vector2.up * _offsetVertical && nextPositionCalculation == Vector2.right * _offsetHorizontal)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightTopRooms.Length);
                 _room = Instantiate(LWayRightTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //Rechts onder
-            else if (previousPositionCalculation == Vector2.right * _offset && nextPositionCalculation == Vector2.down * _offset)
+            else if (previousPositionCalculation == Vector2.right * _offsetHorizontal && nextPositionCalculation == Vector2.down * _offsetVertical)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightBottomRooms.Length);
                 _room = Instantiate(LWayRightBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
-            else if (previousPositionCalculation == Vector2.down * _offset && nextPositionCalculation == Vector2.right * _offset)
+            else if (previousPositionCalculation == Vector2.down * _offsetVertical && nextPositionCalculation == Vector2.right * _offsetHorizontal)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightBottomRooms.Length);
                 _room = Instantiate(LWayRightBottomRooms[_randomRoomIndex], position, Quaternion.identity);
@@ -147,19 +148,19 @@ public class Generator : MonoBehaviour
 
         previousPositionCalculation = previousPosition - position;
 
-        if (previousPositionCalculation == Vector2.left * _offset)
+        if (previousPositionCalculation == Vector2.left * _offsetHorizontal)
         {
             _room = Instantiate(EndRooms[3], position, Quaternion.identity);
         }
-        else if (previousPositionCalculation == Vector2.right * _offset)
+        else if (previousPositionCalculation == Vector2.right * _offsetHorizontal)
         {
             _room = Instantiate(EndRooms[1], position, Quaternion.identity);
         }
-        else if (previousPositionCalculation == Vector2.up * _offset)
+        else if (previousPositionCalculation == Vector2.up * _offsetVertical)
         {
             _room = Instantiate(EndRooms[0], position, Quaternion.identity);
         }
-        else if (previousPositionCalculation == Vector2.down * _offset)
+        else if (previousPositionCalculation == Vector2.down * _offsetVertical)
         {
             _room = Instantiate(EndRooms[2], position, Quaternion.identity);
         }
@@ -191,7 +192,7 @@ public class Generator : MonoBehaviour
                     switch (randomDirection)
                     {
                         case 0:
-                            _position = _lastPosition + Vector2.left * _offset;
+                            _position = _lastPosition + Vector2.left * _offsetHorizontal;
                             if (IsOverlapping())
                             {
                                 hasOverLap = true;
@@ -199,7 +200,7 @@ public class Generator : MonoBehaviour
                             }
                             break;
                         case 1:
-                            _position = _lastPosition + Vector2.up * _offset;
+                            _position = _lastPosition + Vector2.up * _offsetVertical;
                             if (IsOverlapping())
                             {
                                 hasOverLap = true;
@@ -207,7 +208,7 @@ public class Generator : MonoBehaviour
                             }
                             break;
                         case 2:
-                            _position = _lastPosition + Vector2.right * _offset;
+                            _position = _lastPosition + Vector2.right * _offsetHorizontal;
                             if (IsOverlapping())
                             {
                                 hasOverLap = true;
@@ -215,7 +216,7 @@ public class Generator : MonoBehaviour
                             }
                             break;
                         case 3:
-                            _position = _lastPosition + Vector2.down * _offset;
+                            _position = _lastPosition + Vector2.down * _offsetVertical;
                             if (IsOverlapping())
                             {
                                 hasOverLap = true;

@@ -24,6 +24,10 @@ public class VoteBooth : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 Debug.Log("Player has entered");
+                if (_player._followers.Count == 0)
+                {
+                    return;
+                }
                 if (_player._followers.Count < removeAmount)
                 {
                     remove = _player._followers.Count;

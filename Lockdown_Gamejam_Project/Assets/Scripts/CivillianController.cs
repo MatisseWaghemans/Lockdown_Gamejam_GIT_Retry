@@ -52,14 +52,14 @@ public class CivillianController : MonoBehaviour
             StartCoroutine(Squash());
         }
         transform.parent = _player.transform;
-        
+        _player._followers.Add(gameObject);
         if(_player._followers.Capacity>=10)
         {
             _radius =4;
         }
         if(!_hasPosition)
         {
-            _player._followers.Add(gameObject);
+
             _position = new Vector3((Random.insideUnitCircle.x*_radius),(Random.insideUnitCircle.y*_radius),0);
             _hasPosition = true;
         }

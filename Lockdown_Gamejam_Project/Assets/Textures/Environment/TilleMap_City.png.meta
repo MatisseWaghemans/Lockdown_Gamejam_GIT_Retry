@@ -4,166 +4,166 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7811078585045921620
-    second: TilleMap_City_0
+    second: TilleMap_City_Grass01
   - first:
       213: 151643338067715509
-    second: TilleMap_City_1
+    second: TilleMap_City_Grass02
   - first:
       213: 4467543471398472264
-    second: TilleMap_City_2
+    second: TilleMap_City_Grass03
   - first:
       213: -3838820732323212079
-    second: TilleMap_City_3
+    second: TilleMap_City_dirt01
   - first:
       213: 1694275083406771309
-    second: TilleMap_City_4
+    second: TilleMap_City_dirt02
   - first:
       213: 5405742191556821332
-    second: TilleMap_City_5
+    second: TilleMap_City_dirt03
   - first:
       213: 4026799616830633472
-    second: TilleMap_City_6
+    second: TilleMap_City_Road01
   - first:
       213: -3068389083870331391
-    second: TilleMap_City_7
+    second: TilleMap_City_Road02
   - first:
       213: 1972382404501617994
-    second: TilleMap_City_8
+    second: TilleMap_City_Road03
   - first:
       213: 8594062284742599907
-    second: TilleMap_City_6
+    second: TilleMap_City_Road01
   - first:
       213: -5949312547753243109
-    second: TilleMap_City_0
+    second: TilleMap_City_Grass01
   - first:
       213: -181624918617192289
-    second: TilleMap_City_1
+    second: TilleMap_City_Grass02
   - first:
       213: -5369552168770603724
-    second: TilleMap_City_2
+    second: TilleMap_City_Grass03
   - first:
       213: 9034911511401632188
-    second: TilleMap_City_3
+    second: TilleMap_City_dirt01
   - first:
       213: -6040581726661036661
-    second: TilleMap_City_4
+    second: TilleMap_City_dirt02
   - first:
       213: -2287766880653078780
-    second: TilleMap_City_5
+    second: TilleMap_City_dirt03
   - first:
       213: 6959473668438600154
-    second: TilleMap_City_7
+    second: TilleMap_City_Road02
   - first:
       213: -9187045352016178634
-    second: TilleMap_City_8
+    second: TilleMap_City_Road03
   - first:
       213: -8274013350069580643
-    second: TilleMap_City_9
+    second: TilleMap_City_Grass04
   - first:
       213: 7598658308304699201
-    second: TilleMap_City_10
+    second: TilleMap_City_dirt00
   - first:
       213: -3638128475250701049
-    second: TilleMap_City_11
+    second: TilleMap_City_Grass05
   - first:
       213: -4970325582626174000
-    second: TilleMap_City_12
+    second: TilleMap_City_dirt04
   - first:
       213: -6657474233524799478
-    second: TilleMap_City_13
+    second: TilleMap_City_Grass00
   - first:
       213: -4964583303231766190
-    second: TilleMap_City_14
+    second: TilleMap_City_dirt05
   - first:
       213: 5165173978866074192
-    second: TilleMap_City_15
+    second: TilleMap_City_Road04
   - first:
       213: -7283459773634203777
-    second: TilleMap_City_16
+    second: TilleMap_City_Road24
   - first:
       213: 1935039177458029829
-    second: TilleMap_City_17
+    second: TilleMap_City_Road05
   - first:
       213: -3926945769253202501
-    second: TilleMap_City_18
+    second: TilleMap_City_Grass06
   - first:
       213: 7647777543481118198
-    second: TilleMap_City_19
+    second: TilleMap_City_Grass07
   - first:
       213: -3253752425698067438
-    second: TilleMap_City_20
+    second: TilleMap_City_Grass08
   - first:
       213: 2812535902248019255
-    second: TilleMap_City_21
+    second: TilleMap_City_dirt06
   - first:
       213: -2781800902597950313
-    second: TilleMap_City_22
+    second: TilleMap_City_dirt07
   - first:
       213: 2673660092440680687
-    second: TilleMap_City_23
+    second: TilleMap_City_dirt08
   - first:
       213: -4583333407170052942
-    second: TilleMap_City_24
+    second: TilleMap_City_Road06
   - first:
       213: 7506130310529150334
-    second: TilleMap_City_25
+    second: TilleMap_City_Road07
   - first:
       213: -5398357482231430660
-    second: TilleMap_City_26
+    second: TilleMap_City_Road08
   - first:
       213: 2398624638539638796
-    second: TilleMap_City_27
+    second: TilleMap_City_Grass09
   - first:
       213: 7630572472872038340
-    second: TilleMap_City_28
+    second: TilleMap_City_Grass10
   - first:
       213: -6661734356488157940
-    second: TilleMap_City_29
+    second: TilleMap_City_Grass13
   - first:
       213: -7156926825999043430
-    second: TilleMap_City_30
+    second: TilleMap_City_dirt09
   - first:
       213: 944825681150544166
-    second: TilleMap_City_31
+    second: TilleMap_City_dirt10
   - first:
       213: 4117420527857320004
-    second: TilleMap_City_32
+    second: TilleMap_City_dirt13
   - first:
       213: 6332836108215613931
-    second: TilleMap_City_33
+    second: TilleMap_City_Road09
   - first:
       213: 8336167002243944319
-    second: TilleMap_City_34
+    second: TilleMap_City_Road10
   - first:
       213: 8341465796326141498
-    second: TilleMap_City_35
+    second: TilleMap_City_Road13
   - first:
       213: 8120286598590502209
-    second: TilleMap_City_36
+    second: TilleMap_City_Grass11
   - first:
       213: -3049510436152076459
-    second: TilleMap_City_37
+    second: TilleMap_City_Grass12
   - first:
       213: 6771111876991350637
-    second: TilleMap_City_38
+    second: TilleMap_City_Grass14
   - first:
       213: -7985108502563276943
-    second: TilleMap_City_39
+    second: TilleMap_City_dirt11
   - first:
       213: 8982956440201458358
-    second: TilleMap_City_40
+    second: TilleMap_City_dirt12
   - first:
       213: -7917012304999543451
-    second: TilleMap_City_41
+    second: TilleMap_City_dirt14
   - first:
       213: 9194385162902760199
-    second: TilleMap_City_42
+    second: TilleMap_City_Road111
   - first:
       213: 431039852495159163
-    second: TilleMap_City_43
+    second: TilleMap_City_Road12
   - first:
       213: -8262439422729407348
-    second: TilleMap_City_44
+    second: TilleMap_City_Road14
   - first:
       213: -8590504013571257917
     second: TilleMap_City_45
@@ -178,19 +178,19 @@ TextureImporter:
     second: TilleMap_City_48
   - first:
       213: 51452947043201650
-    second: TilleMap_City_49
+    second: TilleMap_City_Road15
   - first:
       213: 4671565196022613184
-    second: TilleMap_City_50
+    second: TilleMap_City_Road16
   - first:
       213: -4225029170202747461
-    second: TilleMap_City_51
+    second: TilleMap_City_Road17
   - first:
       213: -5145438115974717212
-    second: TilleMap_City_52
+    second: TilleMap_City_Road18
   - first:
       213: -7639888422838523569
-    second: TilleMap_City_53
+    second: TilleMap_City_Road19
   - first:
       213: 6472264187400124402
     second: TilleMap_City_54
@@ -205,19 +205,19 @@ TextureImporter:
     second: TilleMap_City_57
   - first:
       213: 702792061527846360
-    second: TilleMap_City_58
+    second: TilleMap_City_Road00
   - first:
       213: 4769788222558710691
-    second: TilleMap_City_59
+    second: TilleMap_City_Road21
   - first:
       213: -8212046539824903236
-    second: TilleMap_City_60
+    second: TilleMap_City_Road22
   - first:
       213: 4747057027667390870
-    second: TilleMap_City_61
+    second: TilleMap_City_Road23
   - first:
       213: 1445429540082747478
-    second: TilleMap_City_62
+    second: TilleMap_City_Road20
   - first:
       213: 558007515014526204
     second: TilleMap_City_63
@@ -797,6 +797,387 @@ TextureImporter:
   - first:
       213: 4859838999398609908
     second: TilleMap_City_255
+  - first:
+      213: -3299351168693595828
+    second: TilleMap_City_Grass04
+  - first:
+      213: -2343738525075850899
+    second: TilleMap_City_dirt00
+  - first:
+      213: -7834055385384348622
+    second: TilleMap_City_Grass05
+  - first:
+      213: 9100065404508442787
+    second: TilleMap_City_dirt04
+  - first:
+      213: -376759112005370373
+    second: TilleMap_City_Grass00
+  - first:
+      213: -5722646539843600270
+    second: TilleMap_City_dirt05
+  - first:
+      213: -6897242835147858113
+    second: TilleMap_City_Road04
+  - first:
+      213: 5081392135734534501
+    second: TilleMap_City_Road24
+  - first:
+      213: -5992382570447398614
+    second: TilleMap_City_Road05
+  - first:
+      213: -3614322955112787681
+    second: TilleMap_City_Grass06
+  - first:
+      213: 2744121301652070754
+    second: TilleMap_City_Grass07
+  - first:
+      213: 848412724687071660
+    second: TilleMap_City_Grass08
+  - first:
+      213: 2644456674039564519
+    second: TilleMap_City_dirt06
+  - first:
+      213: 8776469284588727083
+    second: TilleMap_City_dirt07
+  - first:
+      213: -4559459673869530493
+    second: TilleMap_City_dirt08
+  - first:
+      213: 1265056411492570087
+    second: TilleMap_City_Road06
+  - first:
+      213: 2520616970096509114
+    second: TilleMap_City_Road07
+  - first:
+      213: -1166320494866902706
+    second: TilleMap_City_Road08
+  - first:
+      213: 6217659258252967218
+    second: TilleMap_City_Grass09
+  - first:
+      213: -7419963929490919979
+    second: TilleMap_City_Grass10
+  - first:
+      213: 8986339689942830196
+    second: TilleMap_City_Grass13
+  - first:
+      213: -7667205379086113194
+    second: TilleMap_City_dirt09
+  - first:
+      213: -1068989907981007590
+    second: TilleMap_City_dirt10
+  - first:
+      213: 7114046399382587085
+    second: TilleMap_City_dirt13
+  - first:
+      213: 1197026980469821276
+    second: TilleMap_City_Road09
+  - first:
+      213: -1237709302172080494
+    second: TilleMap_City_Road10
+  - first:
+      213: 5777178989651153926
+    second: TilleMap_City_Road13
+  - first:
+      213: -4926924656458966377
+    second: TilleMap_City_Grass11
+  - first:
+      213: -5957109723260822701
+    second: TilleMap_City_Grass12
+  - first:
+      213: 6595663193144023201
+    second: TilleMap_City_Grass14
+  - first:
+      213: 8585357870302444200
+    second: TilleMap_City_dirt11
+  - first:
+      213: -3256506522766279187
+    second: TilleMap_City_dirt12
+  - first:
+      213: 2704061685195442970
+    second: TilleMap_City_dirt14
+  - first:
+      213: 982048764560391005
+    second: TilleMap_City_Road111
+  - first:
+      213: 3844271746577768345
+    second: TilleMap_City_Road12
+  - first:
+      213: -4575304078290445157
+    second: TilleMap_City_Road14
+  - first:
+      213: -7475760740887401924
+    second: TilleMap_City_45
+  - first:
+      213: 1275641680491098208
+    second: TilleMap_City_46
+  - first:
+      213: -8012336640212526078
+    second: TilleMap_City_47
+  - first:
+      213: 7908424992432357659
+    second: TilleMap_City_48
+  - first:
+      213: 6045591006532687931
+    second: TilleMap_City_Road15
+  - first:
+      213: -3326560615070784206
+    second: TilleMap_City_Road16
+  - first:
+      213: -8368070598358517763
+    second: TilleMap_City_Road17
+  - first:
+      213: 6413826638411353505
+    second: TilleMap_City_Road18
+  - first:
+      213: 6585587768474647959
+    second: TilleMap_City_Road19
+  - first:
+      213: -1831751465075044969
+    second: TilleMap_City_54
+  - first:
+      213: 6336629241105315676
+    second: TilleMap_City_55
+  - first:
+      213: 647314217084348717
+    second: TilleMap_City_56
+  - first:
+      213: -1078372351728622623
+    second: TilleMap_City_57
+  - first:
+      213: 6978298891446761851
+    second: TilleMap_City_Road00
+  - first:
+      213: -7169952558032539065
+    second: TilleMap_City_Road21
+  - first:
+      213: 4668560065864862900
+    second: TilleMap_City_Road22
+  - first:
+      213: -8154985388383031928
+    second: TilleMap_City_Road23
+  - first:
+      213: 6759392789853436611
+    second: TilleMap_City_Road20
+  - first:
+      213: 1948673736121828970
+    second: TilleMap_City_63
+  - first:
+      213: -1913393038835564208
+    second: TilleMap_City_64
+  - first:
+      213: 5435709047182853303
+    second: TilleMap_City_65
+  - first:
+      213: 173679726630787405
+    second: TilleMap_City_66
+  - first:
+      213: -302460976409458477
+    second: TilleMap_City_67
+  - first:
+      213: -2718893261067035960
+    second: TilleMap_City_68
+  - first:
+      213: 4024281709185362770
+    second: TilleMap_City_69
+  - first:
+      213: -8703417072752562949
+    second: TilleMap_City_70
+  - first:
+      213: 2952455059042150841
+    second: TilleMap_City_71
+  - first:
+      213: 6194757836687353273
+    second: TilleMap_City_72
+  - first:
+      213: -2131224234556785661
+    second: TilleMap_City_73
+  - first:
+      213: 3531024340538558063
+    second: TilleMap_City_74
+  - first:
+      213: 4796562829381044885
+    second: TilleMap_City_75
+  - first:
+      213: 9204189935997605421
+    second: TilleMap_City_76
+  - first:
+      213: -1152497232790807895
+    second: TilleMap_City_77
+  - first:
+      213: 8553601509037821854
+    second: TilleMap_City_78
+  - first:
+      213: 5308635058856525521
+    second: TilleMap_City_79
+  - first:
+      213: -4935379417468984
+    second: TilleMap_City_80
+  - first:
+      213: -5949312547753243109
+    second: TilleMap_City_0
+  - first:
+      213: -181624918617192289
+    second: TilleMap_City_1
+  - first:
+      213: -5369552168770603724
+    second: TilleMap_City_2
+  - first:
+      213: 9034911511401632188
+    second: TilleMap_City_3
+  - first:
+      213: -6040581726661036661
+    second: TilleMap_City_4
+  - first:
+      213: -2287766880653078780
+    second: TilleMap_City_5
+  - first:
+      213: 8594062284742599907
+    second: TilleMap_City_6
+  - first:
+      213: 6959473668438600154
+    second: TilleMap_City_7
+  - first:
+      213: -9187045352016178634
+    second: TilleMap_City_8
+  - first:
+      213: -3299351168693595828
+    second: TilleMap_City_9
+  - first:
+      213: -2343738525075850899
+    second: TilleMap_City_10
+  - first:
+      213: -7834055385384348622
+    second: TilleMap_City_11
+  - first:
+      213: 9100065404508442787
+    second: TilleMap_City_12
+  - first:
+      213: -376759112005370373
+    second: TilleMap_City_13
+  - first:
+      213: -5722646539843600270
+    second: TilleMap_City_14
+  - first:
+      213: -6897242835147858113
+    second: TilleMap_City_15
+  - first:
+      213: 5081392135734534501
+    second: TilleMap_City_16
+  - first:
+      213: -5992382570447398614
+    second: TilleMap_City_17
+  - first:
+      213: -3614322955112787681
+    second: TilleMap_City_18
+  - first:
+      213: 2744121301652070754
+    second: TilleMap_City_19
+  - first:
+      213: 848412724687071660
+    second: TilleMap_City_20
+  - first:
+      213: 2644456674039564519
+    second: TilleMap_City_21
+  - first:
+      213: 8776469284588727083
+    second: TilleMap_City_22
+  - first:
+      213: -4559459673869530493
+    second: TilleMap_City_23
+  - first:
+      213: 1265056411492570087
+    second: TilleMap_City_24
+  - first:
+      213: 2520616970096509114
+    second: TilleMap_City_25
+  - first:
+      213: -1166320494866902706
+    second: TilleMap_City_26
+  - first:
+      213: 6217659258252967218
+    second: TilleMap_City_27
+  - first:
+      213: -7419963929490919979
+    second: TilleMap_City_28
+  - first:
+      213: 8986339689942830196
+    second: TilleMap_City_29
+  - first:
+      213: -7667205379086113194
+    second: TilleMap_City_30
+  - first:
+      213: -1068989907981007590
+    second: TilleMap_City_31
+  - first:
+      213: 7114046399382587085
+    second: TilleMap_City_32
+  - first:
+      213: 1197026980469821276
+    second: TilleMap_City_33
+  - first:
+      213: -1237709302172080494
+    second: TilleMap_City_34
+  - first:
+      213: 5777178989651153926
+    second: TilleMap_City_35
+  - first:
+      213: -4926924656458966377
+    second: TilleMap_City_36
+  - first:
+      213: -5957109723260822701
+    second: TilleMap_City_37
+  - first:
+      213: 6595663193144023201
+    second: TilleMap_City_38
+  - first:
+      213: 8585357870302444200
+    second: TilleMap_City_39
+  - first:
+      213: -3256506522766279187
+    second: TilleMap_City_40
+  - first:
+      213: 2704061685195442970
+    second: TilleMap_City_41
+  - first:
+      213: 982048764560391005
+    second: TilleMap_City_42
+  - first:
+      213: 3844271746577768345
+    second: TilleMap_City_43
+  - first:
+      213: -4575304078290445157
+    second: TilleMap_City_44
+  - first:
+      213: 6045591006532687931
+    second: TilleMap_City_49
+  - first:
+      213: -3326560615070784206
+    second: TilleMap_City_50
+  - first:
+      213: -8368070598358517763
+    second: TilleMap_City_51
+  - first:
+      213: 6413826638411353505
+    second: TilleMap_City_52
+  - first:
+      213: 6585587768474647959
+    second: TilleMap_City_53
+  - first:
+      213: 6978298891446761851
+    second: TilleMap_City_58
+  - first:
+      213: -7169952558032539065
+    second: TilleMap_City_59
+  - first:
+      213: 4668560065864862900
+    second: TilleMap_City_60
+  - first:
+      213: -8154985388383031928
+    second: TilleMap_City_61
+  - first:
+      213: 6759392789853436611
+    second: TilleMap_City_62
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -882,7 +1263,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilleMap_City_6
+      name: TilleMap_City_Road01
       rect:
         serializedVersion: 2
         x: 1536
@@ -890,7 +1271,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -903,7 +1284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_0
+      name: TilleMap_City_Grass01
       rect:
         serializedVersion: 2
         x: 0
@@ -911,7 +1292,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,7 +1305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_1
+      name: TilleMap_City_Grass02
       rect:
         serializedVersion: 2
         x: 256
@@ -932,7 +1313,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,7 +1326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_2
+      name: TilleMap_City_Grass03
       rect:
         serializedVersion: 2
         x: 512
@@ -953,7 +1334,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -966,7 +1347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_3
+      name: TilleMap_City_dirt01
       rect:
         serializedVersion: 2
         x: 768
@@ -974,7 +1355,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -987,7 +1368,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_4
+      name: TilleMap_City_dirt02
       rect:
         serializedVersion: 2
         x: 1024
@@ -995,7 +1376,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1008,7 +1389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_5
+      name: TilleMap_City_dirt03
       rect:
         serializedVersion: 2
         x: 1280
@@ -1016,7 +1397,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1029,7 +1410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_7
+      name: TilleMap_City_Road02
       rect:
         serializedVersion: 2
         x: 1792
@@ -1037,7 +1418,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1050,7 +1431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_8
+      name: TilleMap_City_Road03
       rect:
         serializedVersion: 2
         x: 2048
@@ -1058,7 +1439,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1071,7 +1452,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_9
+      name: TilleMap_City_Grass04
       rect:
         serializedVersion: 2
         x: 0
@@ -1079,7 +1460,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1092,7 +1473,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_10
+      name: TilleMap_City_dirt00
       rect:
         serializedVersion: 2
         x: 256
@@ -1100,7 +1481,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1113,7 +1494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_11
+      name: TilleMap_City_Grass05
       rect:
         serializedVersion: 2
         x: 512
@@ -1121,7 +1502,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1134,7 +1515,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_12
+      name: TilleMap_City_dirt04
       rect:
         serializedVersion: 2
         x: 768
@@ -1142,7 +1523,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1155,7 +1536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_13
+      name: TilleMap_City_Grass00
       rect:
         serializedVersion: 2
         x: 1024
@@ -1163,7 +1544,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1176,7 +1557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_14
+      name: TilleMap_City_dirt05
       rect:
         serializedVersion: 2
         x: 1280
@@ -1184,7 +1565,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1197,7 +1578,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_15
+      name: TilleMap_City_Road04
       rect:
         serializedVersion: 2
         x: 1536
@@ -1205,7 +1586,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1218,7 +1599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_16
+      name: TilleMap_City_Road24
       rect:
         serializedVersion: 2
         x: 1792
@@ -1226,7 +1607,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1239,7 +1620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_17
+      name: TilleMap_City_Road05
       rect:
         serializedVersion: 2
         x: 2048
@@ -1247,7 +1628,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1260,7 +1641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_18
+      name: TilleMap_City_Grass06
       rect:
         serializedVersion: 2
         x: 0
@@ -1268,7 +1649,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1281,7 +1662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_19
+      name: TilleMap_City_Grass07
       rect:
         serializedVersion: 2
         x: 256
@@ -1289,7 +1670,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1302,7 +1683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_20
+      name: TilleMap_City_Grass08
       rect:
         serializedVersion: 2
         x: 512
@@ -1310,7 +1691,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1323,7 +1704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_21
+      name: TilleMap_City_dirt06
       rect:
         serializedVersion: 2
         x: 768
@@ -1331,7 +1712,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1344,7 +1725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_22
+      name: TilleMap_City_dirt07
       rect:
         serializedVersion: 2
         x: 1024
@@ -1352,7 +1733,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1365,7 +1746,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_23
+      name: TilleMap_City_dirt08
       rect:
         serializedVersion: 2
         x: 1280
@@ -1373,7 +1754,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1386,7 +1767,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_24
+      name: TilleMap_City_Road06
       rect:
         serializedVersion: 2
         x: 1536
@@ -1394,7 +1775,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1407,7 +1788,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_25
+      name: TilleMap_City_Road07
       rect:
         serializedVersion: 2
         x: 1792
@@ -1415,7 +1796,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1428,7 +1809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_26
+      name: TilleMap_City_Road08
       rect:
         serializedVersion: 2
         x: 2048
@@ -1436,7 +1817,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1449,7 +1830,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_27
+      name: TilleMap_City_Grass09
       rect:
         serializedVersion: 2
         x: 0
@@ -1457,7 +1838,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1470,7 +1851,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_28
+      name: TilleMap_City_Grass10
       rect:
         serializedVersion: 2
         x: 256
@@ -1478,7 +1859,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1491,7 +1872,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_29
+      name: TilleMap_City_Grass13
       rect:
         serializedVersion: 2
         x: 512
@@ -1499,7 +1880,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1512,7 +1893,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_30
+      name: TilleMap_City_dirt09
       rect:
         serializedVersion: 2
         x: 768
@@ -1520,7 +1901,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1533,7 +1914,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_31
+      name: TilleMap_City_dirt10
       rect:
         serializedVersion: 2
         x: 1024
@@ -1541,7 +1922,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1554,7 +1935,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_32
+      name: TilleMap_City_dirt13
       rect:
         serializedVersion: 2
         x: 1280
@@ -1562,7 +1943,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1575,7 +1956,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_33
+      name: TilleMap_City_Road09
       rect:
         serializedVersion: 2
         x: 1536
@@ -1583,7 +1964,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1596,7 +1977,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_34
+      name: TilleMap_City_Road10
       rect:
         serializedVersion: 2
         x: 1792
@@ -1604,7 +1985,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1617,7 +1998,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_35
+      name: TilleMap_City_Road13
       rect:
         serializedVersion: 2
         x: 2048
@@ -1625,7 +2006,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1638,7 +2019,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_36
+      name: TilleMap_City_Grass11
       rect:
         serializedVersion: 2
         x: 0
@@ -1646,7 +2027,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1659,7 +2040,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_37
+      name: TilleMap_City_Grass12
       rect:
         serializedVersion: 2
         x: 256
@@ -1667,7 +2048,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1680,15 +2061,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_38
+      name: TilleMap_City_Grass14
       rect:
         serializedVersion: 2
-        x: 512
+        x: 515
         y: 1024
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1701,7 +2082,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_39
+      name: TilleMap_City_dirt11
       rect:
         serializedVersion: 2
         x: 768
@@ -1709,7 +2090,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1722,7 +2103,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_40
+      name: TilleMap_City_dirt12
       rect:
         serializedVersion: 2
         x: 1024
@@ -1730,7 +2111,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1743,7 +2124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_41
+      name: TilleMap_City_dirt14
       rect:
         serializedVersion: 2
         x: 1280
@@ -1751,7 +2132,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1764,7 +2145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_42
+      name: TilleMap_City_Road111
       rect:
         serializedVersion: 2
         x: 1536
@@ -1772,7 +2153,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1785,7 +2166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_43
+      name: TilleMap_City_Road12
       rect:
         serializedVersion: 2
         x: 1792
@@ -1793,7 +2174,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1806,7 +2187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_44
+      name: TilleMap_City_Road14
       rect:
         serializedVersion: 2
         x: 2048
@@ -1814,7 +2195,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1835,7 +2216,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1856,7 +2237,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1877,7 +2258,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1898,7 +2279,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1911,7 +2292,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_49
+      name: TilleMap_City_Road15
       rect:
         serializedVersion: 2
         x: 1024
@@ -1919,7 +2300,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1932,7 +2313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_50
+      name: TilleMap_City_Road16
       rect:
         serializedVersion: 2
         x: 1280
@@ -1940,7 +2321,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1953,7 +2334,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_51
+      name: TilleMap_City_Road17
       rect:
         serializedVersion: 2
         x: 1536
@@ -1961,7 +2342,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1974,7 +2355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_52
+      name: TilleMap_City_Road18
       rect:
         serializedVersion: 2
         x: 1792
@@ -1982,7 +2363,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1995,7 +2376,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_53
+      name: TilleMap_City_Road19
       rect:
         serializedVersion: 2
         x: 2048
@@ -2003,7 +2384,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2024,7 +2405,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2045,7 +2426,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2066,7 +2447,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2087,7 +2468,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2100,7 +2481,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_58
+      name: TilleMap_City_Road00
       rect:
         serializedVersion: 2
         x: 1024
@@ -2108,7 +2489,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2121,7 +2502,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_59
+      name: TilleMap_City_Road21
       rect:
         serializedVersion: 2
         x: 1280
@@ -2129,7 +2510,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2142,7 +2523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_60
+      name: TilleMap_City_Road22
       rect:
         serializedVersion: 2
         x: 1536
@@ -2150,7 +2531,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2163,7 +2544,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_61
+      name: TilleMap_City_Road23
       rect:
         serializedVersion: 2
         x: 1792
@@ -2171,7 +2552,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2184,7 +2565,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilleMap_City_62
+      name: TilleMap_City_Road20
       rect:
         serializedVersion: 2
         x: 2048
@@ -2192,7 +2573,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2213,7 +2594,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2234,7 +2615,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2255,7 +2636,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2276,7 +2657,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2297,7 +2678,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2318,7 +2699,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2339,7 +2720,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2360,7 +2741,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2381,7 +2762,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2402,7 +2783,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2423,7 +2804,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2444,7 +2825,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2465,7 +2846,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2486,7 +2867,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2507,7 +2888,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2528,7 +2909,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2549,7 +2930,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2570,7 +2951,7 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

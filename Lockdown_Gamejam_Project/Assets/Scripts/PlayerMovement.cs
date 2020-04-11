@@ -38,7 +38,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
             ShootGun();
+<<<<<<< HEAD
+=======
+        if(_hasShot)
+        {
+>>>>>>> parent of f6d7101... Sounds
         MoveGun();
+        }
     }
 
     private void Move()
@@ -75,6 +81,21 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MoveGun()
     {
+<<<<<<< HEAD
+=======
+        Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
+            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,-0.2f);
+        }
+        else
+        {
+            _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
+            _gun.transform.localPosition = new Vector3(0.38f,0.07f,-0.2f);
+        }
+>>>>>>> parent of f6d7101... Sounds
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 lookAt = mouseScreenPosition;

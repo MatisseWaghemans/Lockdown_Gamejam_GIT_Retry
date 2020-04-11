@@ -42,5 +42,9 @@ public class NotesBehavior : MonoBehaviour
             other.collider.isTrigger = true;
             Destroy(this.gameObject);
         }
+        if (other.gameObject.tag == "Prop")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

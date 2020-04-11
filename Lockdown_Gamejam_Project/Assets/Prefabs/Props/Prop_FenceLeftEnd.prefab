@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2400515597359453901}
   - component: {fileID: 2400515597359453902}
+  - component: {fileID: 4136198036026108504}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -69,8 +70,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4709633699284121445, guid: 7f68d1150ff94dc42a87e57c18f46a28,
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 1314562250619467427, guid: 7f68d1150ff94dc42a87e57c18f46a28,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -82,6 +83,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &4136198036026108504
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2400515597359453900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18635632, y: -0.35363877}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.62039155, y: 0.29272246}
+  m_EdgeRadius: 0
 --- !u!1 &2400515598048044704
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +120,7 @@ GameObject:
   - component: {fileID: 2400515598048044705}
   m_Layer: 0
   m_Name: Prop_FenceLeftEnd
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

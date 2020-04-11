@@ -27,6 +27,7 @@ public class CivillianController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _player = FindObjectOfType<PlayerMovement>();
         if(!_isHit)
         {
         if(_moving)
@@ -67,6 +68,9 @@ public class CivillianController : MonoBehaviour
         {
         transform.localPosition = Vector3.Lerp(transform.localPosition,_position,Time.deltaTime);
         }
+        if(transform.parent.GetComponentInChildren<SpriteRenderer>().flipX)
+        GetComponent<SpriteRenderer>().flipX = true;
+        else GetComponent<SpriteRenderer>().flipX = false;
         
     }
     public void Hit()

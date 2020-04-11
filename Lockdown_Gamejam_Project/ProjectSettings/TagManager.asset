@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Civillian
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - 
   - 
   - Bullets
-  - 
-  - 
-  - 
+  - Car
+  - Civilian
+  - Player
   - 
   - 
   - 

@@ -10,6 +10,7 @@ public class CameraScriptWard : MonoBehaviour
 
     private void FixedUpdate()
   {
+    Player = FindObjectOfType<PlayerMovement>().transform;
       transform.position = Vector3.Lerp(transform.position,
           new Vector3(Player.position.x, Player.position.y, transform.position.z), LerpValue);
   }

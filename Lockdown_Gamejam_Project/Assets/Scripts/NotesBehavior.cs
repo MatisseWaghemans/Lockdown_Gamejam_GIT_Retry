@@ -34,6 +34,9 @@ public class NotesBehavior : MonoBehaviour
             other.collider.isTrigger = true;
             Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+        if(other.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

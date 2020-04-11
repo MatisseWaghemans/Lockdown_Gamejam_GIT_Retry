@@ -21,7 +21,6 @@ public class CivillianController : MonoBehaviour
     {
         _player = FindObjectOfType<PlayerMovement>();
         _randomPos = new Vector3(Random.insideUnitCircle.x*10,Random.insideUnitCircle.y*10,0);
-        Debug.Log(_randomPos);
     }
 
     // Update is called once per frame
@@ -39,7 +38,6 @@ public class CivillianController : MonoBehaviour
         {
             _moving = false;
             _randomPos =Random.insideUnitCircle*10;
-            Debug.Log(_randomPos);
             _moving = true;
         }
         }

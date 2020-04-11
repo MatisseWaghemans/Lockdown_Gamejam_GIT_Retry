@@ -169,4 +169,8 @@ public class PlayerMovement : MonoBehaviour
         _hasSquashed = true;
         yield return null;
     }
+    public void Hit()
+    {
+        Debug.Log("Hit");
+    }
 }

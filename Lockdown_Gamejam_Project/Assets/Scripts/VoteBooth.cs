@@ -14,7 +14,13 @@ public class VoteBooth : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //remove some ppl
+            if(other.GetComponentInChildren<GameObject>().CompareTag("Civillian"))
+            {
+                for(int i=0;i<10;i++)
+                {
+                Destroy(other.GetComponent<PlayerMovement>()._followers[i]);
+                }
+            }
         }
     }
 }

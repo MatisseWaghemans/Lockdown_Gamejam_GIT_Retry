@@ -17,11 +17,26 @@ public class BulletController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.tag =="Civillian")
+        if(collider.CompareTag("Civillian"))
         {
             Destroy(collider.gameObject);
             Destroy(gameObject);
         }
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Wall"))
+        {
         Destroy(gameObject);
+        }
+        if(other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerMovement>().Hit();
+        Destroy(gameObject);
+        }
+        if(other.gameObject.CompareTag("Civillian"))
+        {
+        Destroy(gameObject);
+        }
     }
 }

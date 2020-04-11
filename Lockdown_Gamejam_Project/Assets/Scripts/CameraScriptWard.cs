@@ -6,15 +6,24 @@ public class CameraScriptWard : MonoBehaviour
 {
     [SerializeField] private Transform Player;
     [SerializeField] private float  LerpValue;
+    Generator _rooms;
+    
+    int _room =0;
 
-
+ void Start()
+ {
+   _rooms = GetComponent<Generator>();
+ }
     private void FixedUpdate()
   {
-<<<<<<< HEAD
-=======
-    Player = FindObjectOfType<PlayerMovement>().transform;
->>>>>>> parent of f6d7101... Sounds
-      transform.position = Vector3.Lerp(transform.position,
-          new Vector3(Player.position.x, Player.position.y, transform.position.z), LerpValue);
+    transform.position = Vector3.Lerp(transform.position,_rooms._roomPositionList[_room],Time.deltaTime);
+  }
+  void OnTriggerEnter2D(Collider2D other)
+  {
+    if(other.CompareTag("Player"))
+    {
+      _room++;
+    }
+
   }
 }

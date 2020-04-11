@@ -20,7 +20,7 @@ public class CarController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(!_moveLeft){
             if(_isStalinCar)
@@ -50,12 +50,16 @@ public class CarController : MonoBehaviour
         {
             transform.position+=Vector3.left*_speed;
         }
-    }
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.CompareTag("Wall"))
+        if(Camera.main.WorldToViewportPoint(transform.position).x<0||Camera.main.WorldToViewportPoint(transform.position).x>1)
         {
-        transform.position = _beginPos;
+            transform.position = new Vector3 (Camera.main.ViewportToWorldPoint(new Vector2(1,0.5f)).x,transform.position.y,transform.position.z);
+        if(_isStalinCar){
+            Destroy(gameObject);
+        }
+        }
+        if(Camera.main.WorldToViewportPoint(transform.position).y<0||Camera.main.WorldToViewportPoint(transform.position).y>1)
+        {
+            transform.position = new Vector3 (Camera.main.ViewportToWorldPoint(new Vector2(0,0.5f)).x,transform.position.y,transform.position.z);
         if(_isStalinCar){
             Destroy(gameObject);
         }

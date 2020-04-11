@@ -20,10 +20,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _force;
     [SerializeField] private Transform _bulletSpawn;
     [SerializeField] private SpriteRenderer character;
+    [SerializeField] private AudioClip _shootingMid;
+    [SerializeField] private AudioClip _shootingStart;
+    [SerializeField] private AudioClip _shootingEnd;
 
     private bool _hasShot = true;
 
     public float Reloadtime = 1f;
+
+    public List<GameObject> _followers = new List<GameObject>();
 
     Vector2 movement;
     // Start is called before the first frame update
@@ -36,30 +41,52 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        if (Input.GetMouseButtonDown(0))
-            ShootGun();
-<<<<<<< HEAD
-=======
-        if(_hasShot)
+        if(Input.GetMouseButtonDown(0))
         {
->>>>>>> parent of f6d7101... Sounds
-        MoveGun();
+            GetComponent<AudioSource>().clip =_shootingStart;
+            GetComponent<AudioSource>().Play();
         }
+        if (Input.GetMouseButton(0))
+        {
+            if(!GetComponent<AudioSource>().isPlaying)
+            {
+            GetComponent<AudioSource>().clip =_shootingMid;
+            GetComponent<AudioSource>().Play();
+            }
+            ShootGun();
+        }
+        if(Input.GetMouseButtonUp(0))
+        {
+            GetComponent<AudioSource>().clip =_shootingEnd;
+            GetComponent<AudioSource>().Play();
+        }
+
+        MoveGun();
     }
 
     private void Move()
     {
+        Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            character.flipX = true;
+        }
+        else
+        {
+            character.flipX = false;
+        }
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
         if(Input.GetAxisRaw("Horizontal") < 0 && !_hasTurned)
         {
-            character.flipX = true;
+
             _hasTurned = true;
         }
         else if (Input.GetAxisRaw("Horizontal") > 0 && _hasTurned)
         {
-            character.flipX = false;
+
             _hasTurned = false;
         }
 
@@ -81,21 +108,18 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MoveGun()
     {
-<<<<<<< HEAD
-=======
         Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
         Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
         if(playerPos.x>mouse.x)
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
-            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,-0.2f);
+            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,0.2f);
         }
         else
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
-            _gun.transform.localPosition = new Vector3(0.38f,0.07f,-0.2f);
+            _gun.transform.localPosition = new Vector3(0.38f,0.07f,0.2f);
         }
->>>>>>> parent of f6d7101... Sounds
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 lookAt = mouseScreenPosition;
@@ -116,10 +140,10 @@ public class PlayerMovement : MonoBehaviour
     {
 
         Shoot();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.07f);
 
         Shoot();
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.07f);
 
         Shoot();
 
@@ -130,8 +154,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, transform.rotation);
-        _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        Vector3 mouse = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>mouse.x)
+        {
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.Euler(0,0,_gun.transform.rotation.eulerAngles.x));
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        }
+        else
+        {
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.Euler(0,0,-_gun.transform.rotation.eulerAngles.x));
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        }
+        
     }
 
     IEnumerator Squash()
@@ -145,7 +180,7 @@ public class PlayerMovement : MonoBehaviour
         while (sin >= 0)
         {
              sin = _Squash * Mathf.Sin(time * Frequency);
-            transform.localScale = Vector3.one + new Vector3(-sin, sin, -sin);
+             character.transform.localScale =Vector3.Scale(Vector3.one + new Vector3(-sin, sin, -sin),Vector3.one*2);
             time += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }

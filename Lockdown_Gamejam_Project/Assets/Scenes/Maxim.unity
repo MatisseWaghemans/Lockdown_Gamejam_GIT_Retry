@@ -416,10 +416,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 10
+  far clip plane: 1000
   field of view: 60
-  orthographic: 1
-  orthographic size: 7.2
+  orthographic: 0
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -443,7 +443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835126948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -511,26 +511,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnRooms:
   - {fileID: 611914738173626699, guid: de65050c27adae34a9d18ba6b25e3cda, type: 3}
-  - {fileID: 611914738173626699, guid: de65050c27adae34a9d18ba6b25e3cda, type: 3}
-  - {fileID: 611914738173626699, guid: de65050c27adae34a9d18ba6b25e3cda, type: 3}
-  - {fileID: 611914738173626699, guid: de65050c27adae34a9d18ba6b25e3cda, type: 3}
   EndRooms:
   - {fileID: 5823889520851328439, guid: 2c27ba32ef205d145bc9da8ead975cac, type: 3}
-  - {fileID: 5823889520851328439, guid: 2c27ba32ef205d145bc9da8ead975cac, type: 3}
-  - {fileID: 5823889520851328439, guid: 2c27ba32ef205d145bc9da8ead975cac, type: 3}
-  - {fileID: 5823889520851328439, guid: 2c27ba32ef205d145bc9da8ead975cac, type: 3}
   HorizontalRooms:
-  - {fileID: 518546153837714171, guid: 1e30011f87405e24ea5ad3895d754de3, type: 3}
-  VerticalRooms:
   - {fileID: 5239402822531646968, guid: 114193cda2000894b91eccc95e938470, type: 3}
-  LWayRightTopRooms:
-  - {fileID: 598755183794774927, guid: 99875822e95b8e04b8458976b32f2987, type: 3}
-  LWayRightBottomRooms:
+  LWayRooms:
   - {fileID: 5418911987250899081, guid: c183cee80018f984187b94eb3a4a11d4, type: 3}
-  LWayLeftTopRooms:
-  - {fileID: 9015544849333616850, guid: be496ee0118a93d40ae934bfc7d4bb97, type: 3}
-  LWayLeftBottomRooms:
-  - {fileID: 7533759549530615218, guid: 59aa4926a1aedec4da6f3d99466ed2ca, type: 3}
   _roomPositionList: []
   NumberOfRooms: 20
 --- !u!4 &2048662438

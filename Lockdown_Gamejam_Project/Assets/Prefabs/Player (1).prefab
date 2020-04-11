@@ -136,7 +136,6 @@ MonoBehaviour:
   _force: 12.4
   _bulletSpawn: {fileID: 1906701002234659146}
   character: {fileID: 2696298615556219268}
-  Reloadtime: 1
 --- !u!50 &2696298615302025646
 Rigidbody2D:
   serializedVersion: 4

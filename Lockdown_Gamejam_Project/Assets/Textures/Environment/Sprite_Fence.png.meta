@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: ba73f48ca30a64a47902bbad9499855f
+guid: 7f68d1150ff94dc42a87e57c18f46a28
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8605556646268389980
-    second: Sprite_Enemy01-Angry
+      213: -8050366079030994097
+    second: Sprite_Fence_Mid
   - first:
-      213: -7476909315587334984
-    second: Sprite_Enemy01-Happy
+      213: 4709633699284121445
+    second: Sprite_Fence_RightEnd
+  - first:
+      213: 1314562250619467427
+    second: Sprite_Fence_LeftEnd
+  - first:
+      213: 6135746721707991076
+    second: Sprite_Fence_BrickTexture
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Enemy01-Angry
+      name: Sprite_Fence_Mid
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
-        width: 512
-        height: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a5bbac03dbe29880800000000000000
-      internalID: -8605556646268389980
+      spriteID: f4bd08b24ba574090800000000000000
+      internalID: -8050366079030994097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemy01-Happy
+      name: Sprite_Fence_RightEnd
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 512
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bc9b92879eac3890800000000000000
-      internalID: -7476909315587334984
+      spriteID: 567f90495eafb5140800000000000000
+      internalID: 4709633699284121445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Fence_LeftEnd
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6bf4fe6634e3210800000000000000
+      internalID: 1314562250619467427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Fence_BrickTexture
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4202c23822d862550800000000000000
+      internalID: 6135746721707991076
       vertices: []
       indices: 
       edges: []
@@ -137,7 +185,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c82fd23f9a0215848b945f9a8c0d6817
+    spriteID: 2158ffc6bf54d3a42ac57575db1c754e
     internalID: 0
     vertices: []
     indices: 

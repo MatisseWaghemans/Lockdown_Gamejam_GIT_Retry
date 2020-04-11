@@ -20,9 +20,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _force;
     [SerializeField] private Transform _bulletSpawn;
     [SerializeField] private SpriteRenderer character;
-    [SerializeField] private AudioClip _shootingMid;
-    [SerializeField] private AudioClip _shootingStart;
-    [SerializeField] private AudioClip _shootingEnd;
 
     private bool _hasShot = true;
 
@@ -41,27 +38,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        if(Input.GetMouseButtonDown(0))
-        {
-            GetComponent<AudioSource>().clip =_shootingStart;
-            GetComponent<AudioSource>().Play();
-        }
-        if (Input.GetMouseButton(0))
-        {
-            if(!GetComponent<AudioSource>().isPlaying)
-            {
-            GetComponent<AudioSource>().clip =_shootingMid;
-            GetComponent<AudioSource>().Play();
-            }
+        if (Input.GetMouseButtonDown(0))
             ShootGun();
-        }
-        if(Input.GetMouseButtonUp(0))
+        if(_hasShot)
         {
-            GetComponent<AudioSource>().clip =_shootingEnd;
-            GetComponent<AudioSource>().Play();
-        }
-
         MoveGun();
+        }
     }
 
     private void Move()
@@ -113,12 +95,12 @@ public class PlayerMovement : MonoBehaviour
         if(playerPos.x>mouse.x)
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = true;
-            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,0.2f);
+            _gun.transform.localPosition = new Vector3(-0.4f,0.15f,-0.2f);
         }
         else
         {
             _gun.GetComponentInChildren<SpriteRenderer>().flipY = false;
-            _gun.transform.localPosition = new Vector3(0.38f,0.07f,0.2f);
+            _gun.transform.localPosition = new Vector3(0.38f,0.07f,-0.2f);
         }
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 

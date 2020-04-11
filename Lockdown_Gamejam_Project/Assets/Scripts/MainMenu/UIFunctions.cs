@@ -14,6 +14,8 @@ public class UIFunctions : MonoBehaviour
 
     private float timer;
     private bool playClicked;
+    private bool returnClicked;
+
 
     private void Update()
     {
@@ -24,6 +26,16 @@ public class UIFunctions : MonoBehaviour
         if (timer >= 3)
         {
             StartGame();
+            timer = 0;
+        }
+        if (returnClicked)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer >= 3)
+        {
+            OpenMenu();
+            timer = 0;
         }
     }
     public void TriggerCameraShake()
@@ -51,6 +63,15 @@ public class UIFunctions : MonoBehaviour
         playerAnimator.SetTrigger("PlayPressed");
         vignetteAnimator.SetTrigger("PlayPressed");
     }
+    public void ReturnClicked()
+    {
+        returnClicked = true;
+        vignetteAnimator.SetTrigger("PlayPressed");
+    }
 
+    public void OpenMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
 }

@@ -10,6 +10,10 @@ public class CameraScriptWard : MonoBehaviour
 
     private void FixedUpdate()
   {
+<<<<<<< HEAD
+=======
+    Player = FindObjectOfType<PlayerMovement>().transform;
+>>>>>>> parent of f6d7101... Sounds
       transform.position = Vector3.Lerp(transform.position,
           new Vector3(Player.position.x, Player.position.y, transform.position.z), LerpValue);
   }

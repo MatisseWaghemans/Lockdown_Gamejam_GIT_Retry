@@ -8,11 +8,18 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Agent.prefab
   - component: {fileID: 4218735380739443951}
   - component: {fileID: 4218735380739443949}
   - component: {fileID: 1117581047098975991}
   m_Layer: 0
   m_Name: Agent
+=======
+  - component: {fileID: 7594227441051447235}
+  - component: {fileID: 7594227441051447234}
+  m_Layer: 0
+  m_Name: Lada
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Car.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +140,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Agent.prefab
   m_Sprite: {fileID: 21300000, guid: 9c80f411e58c4a7479eb36a9b6133e3c, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 1c01f207ffcb1e845ac2cb034d7ef72d, type: 3}
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Car.prefab
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -144,12 +155,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Agent.prefab
 --- !u!114 &4218735381929268748
 MonoBehaviour:
+=======
+--- !u!1 &7594227442332250332
+GameObject:
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Car.prefab
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Agent.prefab
   m_GameObject: {fileID: 4218735381929268746}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -159,10 +176,25 @@ MonoBehaviour:
 --- !u!95 &8308440682912700145
 Animator:
   serializedVersion: 3
+=======
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7594227442332250323}
+  m_Layer: 0
+  m_Name: Car
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7594227442332250323
+Transform:
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Car.prefab
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Agent.prefab
   m_GameObject: {fileID: 4218735381929268746}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
@@ -175,3 +207,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+  m_GameObject: {fileID: 7594227442332250332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7594227441051447235}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Car.prefab

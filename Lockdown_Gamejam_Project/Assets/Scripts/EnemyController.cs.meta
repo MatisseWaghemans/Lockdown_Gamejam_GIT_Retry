@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b0a0e822ff65dde4ebb3bd1d58b1edb0
+=======
+guid: ed4e4e1d47515754c9b97740f4c7e29f
+>>>>>>> parent of 98c1b4f... Merge branch 'master' of https://github.com/MatisseWaghemans/Lockdown_Gamejam_GIT_Retry
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

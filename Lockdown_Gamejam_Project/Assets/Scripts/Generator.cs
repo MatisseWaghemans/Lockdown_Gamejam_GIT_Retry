@@ -5,141 +5,14 @@ using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-    //[SerializeField] private GameObject _startTile;
-    //[SerializeField] private GameObject _endTile;
-    //[SerializeField] private GameObject _straightTile;
-    //[SerializeField] private GameObject _curveTile;
-
-    //[SerializeField] private int _tileCount;
-
-    //private Vector2 _position = Vector2.zero;
-
-    //private int _offset = 5;
-    //void Start()
-    //{
-    //    CalculatePositions();
-    //}
-
-    //private void CalculatePositions()
-    //{
-    //    Vector2 previousPosition;
-    //    int randomTileRotation, previousTileRotation, randomTileNumber;
-
-    //    //Start tile
-    //    randomTileRotation = UnityEngine.Random.Range(0, 4);
-    //    //second tile
-    //    randomTileNumber = UnityEngine.Random.Range(0, 2);
-    //    Debug.Log("spawnNummer: " + randomTileRotation);
-    //    switch (randomTileRotation)
-    //    {
-    //        case 0:
-    //            PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 0));
-    //            if (randomTileNumber == 0)
-    //            {
-    //                PlaceTile(_straightTile, _position + new Vector2(0, _offset), Quaternion.Euler(0, 0, 0));
-    //            }
-    //            else
-    //            {
-    //                PlaceTile(_curveTile, _position + new Vector2(0, _offset), Quaternion.Euler(0, 0, 0));
-    //            }              
-    //            previousPosition = _position + new Vector2(0, _offset);
-    //            break;
-    //        case 1:
-    //            PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, -90));
-    //            if (randomTileNumber == 0)
-    //            {
-    //                PlaceTile(_straightTile, _position + new Vector2(_offset, 0), Quaternion.Euler(0, 0, 90));
-    //            }
-    //            else
-    //            {
-    //                PlaceTile(_curveTile, _position + new Vector2(_offset, 0), Quaternion.Euler(0, 0, 90));
-    //            }               
-    //            previousPosition = _position + new Vector2(_offset, 0);
-    //            break;
-    //        case 2:
-    //            PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 180));
-    //            if (randomTileNumber == 0)
-    //            {
-    //                PlaceTile(_straightTile, _position + new Vector2(0, -_offset), Quaternion.Euler(0, 0, 0));
-    //            }
-    //            else
-    //            {
-    //                PlaceTile(_curveTile, _position + new Vector2(0, -_offset), Quaternion.Euler(0, 0, 0));
-    //            }               
-    //            previousPosition = _position + new Vector2(0, -_offset);
-    //            break;
-    //        case 3:
-    //            PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 90));
-    //            if (randomTileNumber == 0)
-    //            {
-    //                PlaceTile(_straightTile, _position + new Vector2(-_offset, 0), Quaternion.Euler(0, 0, 90));
-    //            }
-    //            else
-    //            {
-    //                PlaceTile(_curveTile, _position + new Vector2(-_offset, 0), Quaternion.Euler(0, 0, 90));
-    //            }               
-    //            previousPosition = _position + new Vector2(-_offset, 0);
-    //            break;
-    //        default:
-    //            break;
-    //    }
-
-    //    previousTileRotation = randomTileRotation;
-
-    //    //Middle tiles
-    //    for (int tileIndex = 0; tileIndex < _tileCount; tileIndex++)
-    //    {
-    //        //type next tile 0 horizontal, 1 curve  
-    //        randomTileNumber = UnityEngine.Random.Range(0, 2);
-
-    //        switch (randomTileNumber)
-    //        {
-    //            case 0:
-    //                switch (previousTileRotation)
-    //                {
-    //                    case 0:
-    //                        //PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 0));
-    //                        previousPosition = _position + new Vector2(0, _offset);
-    //                        break;
-    //                    case 1:
-    //                        //PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, -90));
-    //                        previousPosition = _position + new Vector2(_offset, 0);
-    //                        break;
-    //                    case 2:
-    //                        //PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 180));
-    //                        previousPosition = _position + new Vector2(0, -_offset);
-    //                        break;
-    //                    case 3:
-    //                        //PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 90));
-    //                        previousPosition = _position + new Vector2(-_offset, 0);
-    //                        break;
-    //                    default:
-    //                        break;
-    //                }
-    //                //PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, 0));
-    //                break;
-    //            case 1:
-    //                PlaceTile(_startTile, _position, Quaternion.Euler(0, 0, -90));
-    //                break;
-    //            default:
-    //                break;
-    //        }
-
-    //    }   
-
-    //    //End tile
-    //}
-
-    //private void PlaceTile(GameObject go, Vector2 position, Quaternion rotation)
-    //{
-    //    GameObject tile = Instantiate(go, position, rotation);
-    //    tile.transform.SetParent(this.transform);
-    //}
-
     public GameObject[] SpawnRooms;
     public GameObject[] EndRooms;
     public GameObject[] HorizontalRooms;
-    public GameObject[] LWayRooms;
+    public GameObject[] VerticalRooms;
+    public GameObject[] LWayRightTopRooms;
+    public GameObject[] LWayRightBottomRooms;
+    public GameObject[] LWayLeftTopRooms;
+    public GameObject[] LWayLeftBottomRooms;
 
     public List<Vector2> _roomPositionList = new List<Vector2>();
     private List<GameObject> _roomList = new List<GameObject>();
@@ -171,23 +44,21 @@ public class Generator : MonoBehaviour
         Vector2 previousPositionCalculation;
         Vector2 nextPositionCalculation;
 
-        _randomRoomIndex = UnityEngine.Random.Range(0, SpawnRooms.Length);
-
         if (nextPosition == Vector2.left * _offset)
         {
-            _room = Instantiate(SpawnRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 90));
+            _room = Instantiate(SpawnRooms[3], position, Quaternion.identity);
         }
         else if (nextPosition == Vector2.right * _offset)
         {
-            _room = Instantiate(SpawnRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, -90));
+            _room = Instantiate(SpawnRooms[1], position, Quaternion.identity);
         }
         else if (nextPosition == Vector2.up * _offset)
         {
-            _room = Instantiate(SpawnRooms[_randomRoomIndex], position, Quaternion.identity);
+            _room = Instantiate(SpawnRooms[0], position, Quaternion.identity);
         }
         else if (nextPosition == Vector2.down * _offset)
         {
-            _room = Instantiate(SpawnRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, -180));
+            _room = Instantiate(SpawnRooms[2], position, Quaternion.identity);
         }
 
         _roomList.Add(_room);
@@ -205,67 +76,67 @@ public class Generator : MonoBehaviour
             if (previousPositionCalculation == Vector2.left * _offset && nextPositionCalculation == Vector2.right * _offset)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, HorizontalRooms.Length);
-                _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 90));
+                _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             else if (previousPositionCalculation == Vector2.right * _offset && nextPositionCalculation == Vector2.left * _offset)
             {
                 _randomRoomIndex = UnityEngine.Random.Range(0, HorizontalRooms.Length);
-                _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 90));
+                _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //boven onder
             else if (previousPositionCalculation == Vector2.up * _offset && nextPositionCalculation == Vector2.down * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, HorizontalRooms.Length);
-                _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.identity);
+                _randomRoomIndex = UnityEngine.Random.Range(0, VerticalRooms.Length);
+                _room = Instantiate(VerticalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             else if (previousPositionCalculation == Vector2.down * _offset && nextPositionCalculation == Vector2.up * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, HorizontalRooms.Length);
-                _room = Instantiate(HorizontalRooms[_randomRoomIndex], position, Quaternion.identity);
+                _randomRoomIndex = UnityEngine.Random.Range(0, VerticalRooms.Length);
+                _room = Instantiate(VerticalRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //links boven
             else if (previousPositionCalculation == Vector2.left * _offset && nextPositionCalculation == Vector2.up * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 180));
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftTopRooms.Length);
+                _room = Instantiate(LWayLeftTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             else if (previousPositionCalculation == Vector2.up * _offset && nextPositionCalculation == Vector2.left * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 180));
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftTopRooms.Length);
+                _room = Instantiate(LWayLeftTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //links onder
             else if (previousPositionCalculation == Vector2.left * _offset && nextPositionCalculation == Vector2.down * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, -90));
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftBottomRooms.Length);
+                _room = Instantiate(LWayLeftBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             else if (previousPositionCalculation == Vector2.down * _offset && nextPositionCalculation == Vector2.left * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, -90));
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayLeftBottomRooms.Length);
+                _room = Instantiate(LWayLeftBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //Rechts boven
             else if (previousPositionCalculation == Vector2.right * _offset && nextPositionCalculation == Vector2.up * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 90));
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightTopRooms.Length);
+                _room = Instantiate(LWayRightTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             else if (previousPositionCalculation == Vector2.up * _offset && nextPositionCalculation == Vector2.right * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 90));
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightTopRooms.Length);
+                _room = Instantiate(LWayRightTopRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             //Rechts onder
             else if (previousPositionCalculation == Vector2.right * _offset && nextPositionCalculation == Vector2.down * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.identity);
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightBottomRooms.Length);
+                _room = Instantiate(LWayRightBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
             else if (previousPositionCalculation == Vector2.down * _offset && nextPositionCalculation == Vector2.right * _offset)
             {
-                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRooms.Length);
-                _room = Instantiate(LWayRooms[_randomRoomIndex], position, Quaternion.identity);
+                _randomRoomIndex = UnityEngine.Random.Range(0, LWayRightBottomRooms.Length);
+                _room = Instantiate(LWayRightBottomRooms[_randomRoomIndex], position, Quaternion.identity);
             }
 
             _roomList.Add(_room);
@@ -276,23 +147,21 @@ public class Generator : MonoBehaviour
 
         previousPositionCalculation = previousPosition - position;
 
-        _randomRoomIndex = UnityEngine.Random.Range(0, EndRooms.Length);
-
         if (previousPositionCalculation == Vector2.left * _offset)
         {
-            _room = Instantiate(EndRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 90));
+            _room = Instantiate(EndRooms[3], position, Quaternion.identity);
         }
         else if (previousPositionCalculation == Vector2.right * _offset)
         {
-            _room = Instantiate(EndRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, -90));
+            _room = Instantiate(EndRooms[1], position, Quaternion.identity);
         }
         else if (previousPositionCalculation == Vector2.up * _offset)
         {
-            _room = Instantiate(EndRooms[_randomRoomIndex], position, Quaternion.identity);
+            _room = Instantiate(EndRooms[0], position, Quaternion.identity);
         }
         else if (previousPositionCalculation == Vector2.down * _offset)
         {
-            _room = Instantiate(EndRooms[_randomRoomIndex], position, Quaternion.Euler(0, 0, 180));
+            _room = Instantiate(EndRooms[2], position, Quaternion.identity);
         }
 
         _roomList.Add(_room);

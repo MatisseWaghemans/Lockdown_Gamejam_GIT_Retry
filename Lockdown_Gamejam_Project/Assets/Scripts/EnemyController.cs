@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private Vector3 _randomPos;
-    private bool _moving = true;
+    [SerializeField] private GameObject _gun;
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private float _force;
+    [SerializeField] private Transform _bulletSpawn;
+    [SerializeField] private SpriteRenderer character;
+    private GameObject _player;
+    private float _timer;
+    private bool _hasShot = true;
+    private bool _isHit;
     // Start is called before the first frame update
     void Start()
     {
-        _randomPos = Random.insideUnitCircle*10;
-        Debug.Log(_randomPos);
+        _player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(_moving)
+        if(!_isHit)
         {
         float distance = Vector3.Distance(transform.position,_player.transform.position);
         if(distance<10)
@@ -65,13 +71,49 @@ public class EnemyController : MonoBehaviour
             _gun.transform.localPosition = new Vector3(0.38f,0.07f,-0.01f);
         }
 
-        float distance = Vector3.Distance(transform.position,_randomPos);
-        if(distance<1)
+        Vector3 lookAt = _player.transform.position;
+
+        float AngleRad = Mathf.Atan2(lookAt.y - _gun.transform.position.y, lookAt.x - _gun.transform.position.x);
+
+        float AngleDeg = (180 / Mathf.PI) * AngleRad;
+
+        _gun.transform.rotation = Quaternion.Euler(-AngleDeg, 90, 0);
+    }
+
+        IEnumerator ShootCouroutine(float Seconds)
+    {
+
+        Shoot();
+        yield return new WaitForSeconds(0.07f);
+
+        Shoot();
+        yield return new WaitForSeconds(0.07f);
+
+        Shoot();
+
+        yield return new WaitForSeconds(Seconds);
+        _hasShot = true;
+        yield return null;
+    }
+
+    private void Shoot()
+    {
+        Vector3 player = Camera.main.WorldToViewportPoint(_player.transform.position);
+        Vector3 playerPos = Camera.main.WorldToViewportPoint(transform.position);
+        if(playerPos.x>player.x)
         {
-            _moving = false;
-            _randomPos =Random.insideUnitCircle*10;
-            Debug.Log(_randomPos);
-            _moving = true;
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.Euler(0,0,_gun.transform.rotation.eulerAngles.x));
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
         }
+        else
+        {
+            GameObject _bullet = Instantiate(_bulletPrefab, _bulletSpawn.position, Quaternion.Euler(0,0,-_gun.transform.rotation.eulerAngles.x));
+            _bullet.GetComponent<Rigidbody2D>().AddForce(_gun.transform.forward * _force, ForceMode2D.Impulse);
+        }
+        
+    }
+    public void Hit()
+    {
+        _isHit = true;
     }
 }

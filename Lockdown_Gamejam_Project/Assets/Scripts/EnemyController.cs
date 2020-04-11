@@ -10,8 +10,12 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _randomPos = Random.insideUnitCircle*10;
         Debug.Log(_randomPos);
+=======
+        _player = FindObjectOfType<PlayerMovement>().gameObject;
+>>>>>>> parent of f6d7101... Sounds
 =======
         _player = FindObjectOfType<PlayerMovement>().gameObject;
 >>>>>>> parent of f6d7101... Sounds
@@ -21,10 +25,13 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(_moving)
         {
         transform.position = Vector3.Lerp(transform.position, _randomPos, Time.deltaTime);
 =======
+=======
+>>>>>>> parent of f6d7101... Sounds
         if(!_isHit)
         {
         float distance = Vector3.Distance(transform.position,_player.transform.position);

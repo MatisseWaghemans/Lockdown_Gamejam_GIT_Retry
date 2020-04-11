@@ -11,6 +11,10 @@ public class CameraScriptWard : MonoBehaviour
     private void FixedUpdate()
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    Player = FindObjectOfType<PlayerMovement>().transform;
+>>>>>>> parent of f6d7101... Sounds
 =======
     Player = FindObjectOfType<PlayerMovement>().transform;
 >>>>>>> parent of f6d7101... Sounds

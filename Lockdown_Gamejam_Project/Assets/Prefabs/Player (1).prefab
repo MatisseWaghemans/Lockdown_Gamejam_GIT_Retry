@@ -71,8 +71,11 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
 <<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Player (1).prefab
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Player (1).prefab
   m_Sprite: {fileID: 830579313104089584, guid: 416230e4962254644a42aab6474d0f5e, type: 3}
 =======
+=======
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
   m_Sprite: {fileID: 21300000, guid: 84d6c05ba946ccd47ba23f7380eceab6, type: 3}
 >>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,6 +106,9 @@ GameObject:
   - component: {fileID: 995467602}
   m_Layer: 0
   m_Name: Player
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Player (1).prefab
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
+=======
 >>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,8 +153,11 @@ MonoBehaviour:
   _bulletSpawn: {fileID: 1906701002234659146}
   character: {fileID: 2696298615556219268}
 <<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Player (1).prefab
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Player (1).prefab
   Reloadtime: 1
 =======
+=======
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
   Reloadtime: 0.3
   _followers: []
 >>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
@@ -201,6 +210,9 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3521974, y: 1.8878138}
   m_EdgeRadius: 0
+<<<<<<< HEAD:Lockdown_Gamejam_Project/Assets/Prefabs/Player (1).prefab
+>>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
+=======
 >>>>>>> parent of f6d7101... Sounds:Lockdown_Gamejam_Project/Assets/Prefabs/Player.prefab
 --- !u!1 &2696298615556219270
 GameObject:

@@ -39,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
             ShootGun();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        if(_hasShot)
+        {
+>>>>>>> parent of f6d7101... Sounds
 =======
         if(_hasShot)
         {
